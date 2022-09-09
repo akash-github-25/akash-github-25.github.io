@@ -1,0 +1,242 @@
+body{
+    background-color: black;
+    
+}
+#nav{
+    border: 1px solid green;
+    width:100%;
+    height:100px;
+    justify-content: space-between;
+    display: flex;
+    position:sticky;
+    top:0;
+    /* bottom: 120px; */
+}
+a{
+    text-decoration: none;
+    font-size: medium;
+}
+#body{
+    /* border:1px solid pink; */
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#section{
+    width:50%;
+    margin-left: 350px;
+}
+#first{
+    border: 1px solid brown;
+    font-size: 30px;
+    width:80%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color:rgb(114, 97, 97); */
+    color: aquamarine;
+    
+}
+#nav1>h2{
+    color: aquamarine;
+}
+#nav1{
+    border: 1px solid red;
+    width:100%;
+    height:100px;
+    background-color:black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+#sec1{
+    border:1px solid green;
+    width:90%;
+    margin-left: 70px;
+    height:320px;
+    background-color: rgb(37,42,44);
+    
+    /* margin: auto; */
+    /* margin-top: 80px; */
+}
+#sec2{
+    border:1px solid green;
+    /* position: absolute; */
+    width:90%;
+    margin-left: 70px;
+    height:320px;
+    /* margin: auto; */
+    margin-top: 60px;
+    background-color: rgb(37,42,44);
+
+}
+#sec3{
+    border:1px solid green;
+    width:90%;
+    margin-left: 70px;
+    height:320px;
+    /* margin: auto; */
+    margin-top: 60px;
+    background-color: rgb(37,42,44);
+}
+#sec4{
+    border:1px solid green;
+    width:90%;
+    margin-left: 70px;
+    height:320px;
+    /* margin: auto; */
+    margin-top: 60px;
+    background-color: rgb(37,42,44);
+}
+#sec5{
+    border:1px solid green;
+    width:90%;
+    margin-left: 70px;
+    height:320px;
+    /* margin: auto; */
+    margin-top: 60px;
+    background-color: rgb(37,42,44);
+}
+
+#image{
+    border:1px solid yellow;
+    width:400px;
+    height:400px;
+   
+    /* z-index: 100px; */
+}
+@media only screen and (min-width:990px) and (max-width:1800px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .home{
+        padding:1rem 4rem;
+    }
+    #image{
+        position: fixed;
+        /* top: 0; */
+        left: 0;
+    }
+
+}
+
+@media only screen and (min-width:769px) and (max-width:991px){
+
+   header{
+       left:-120%;
+   }
+
+   #menu{
+       display: block;
+   }
+
+   header.toggle{
+    left:0%;
+   }
+
+   body{
+       padding:0;
+   }
+   #body{
+  display: block;
+   }
+   #image{
+    width:50%;
+    /* height: 50%; */
+    margin: auto;
+    margin-bottom: 40px;
+    
+   }
+   #sec1{
+    width:100%;
+    margin: auto;
+    margin-left: -125px;
+    /* height: 1000%; */
+    margin-top: 15px;
+}
+#sec2{
+    width:100%;
+    margin: auto;
+    margin-left: -125px;
+    /* height: 1000%; */
+    margin-top: 15px;
+}
+#sec3{
+    width:100%;
+    margin: auto;
+    margin-left: -125px;
+    margin-top: 15px;
+}
+#sec4{
+    width:100%;
+    margin: auto;
+    margin-left: -125px;
+    margin-top: 15px;
+}
+#sec5{
+    width:100%;
+    margin: auto;
+    margin-left: -125px;
+    margin-top: 15px;
+}
+
+}
+
+@media (max-width:768px){
+
+    html{
+        font-size: 50%;
+    }
+    #body{
+        display: block;
+         }
+         #image{
+            width:80%;
+            /* height: 50%; */
+            margin: auto;
+            margin-bottom: 40px;
+            
+           }
+    #sec1{
+        width:150%;
+        margin-top: 5px;
+        margin: auto;
+        margin-left: -265px;
+        margin-top: 15px;
+    }
+    #sec2{
+        width:150%;
+        margin: auto;
+        margin-left: -265px;
+        margin-top: 15px;
+        /* height: 1000%; */
+        /* margin-top: 5px; */
+    }
+    #sec3{
+        width:150%;
+        margin: auto;
+        margin-left: -265px;
+        margin-top: 15px;
+        /* margin-top: 5px; */
+    }
+    #sec4{
+        width:150%;
+        margin: auto;
+        margin-left: -265px;
+        margin-top: 15px;
+        /* margin-top: 5px; */
+    }
+    #sec5{
+        width:150%;
+        margin: auto;
+        margin-left: -265px;
+        margin-top: 15px;
+        /* margin-top: 5px; */
+    }
+ 
+ }
