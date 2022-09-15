@@ -108,7 +108,8 @@ header .user img{
     height:17rem;
     width:17rem;
     border-radius: 50%;
-    object-fit: cover;
+    /* object-fit: cover; */
+    margin-top: 3rem;
     margin-bottom: 1rem;
     border:.7rem solid var(--yellow);
 }
@@ -137,13 +138,13 @@ header .navbar ul{
 
 header .navbar ul li a{
     display: block;
-    padding:1rem;
-    margin:1.5rem 0;
+    padding:0.8rem;
+    margin:0.8rem 0;
     background:#333;
     color:#fff;
     /* color:black; */
     font-size: 2rem;
-    border-radius: 5rem;
+    border-radius: 3rem;
 }
 
 header .navbar ul li a:hover{
@@ -300,7 +301,7 @@ header .navbar ul li a:hover{
 }
 
 .portfolio .box-container .box{
-    height: 25rem;
+    height: 38rem;
     width:27rem;
     border-radius: 1rem;
     margin:2rem;
@@ -309,16 +310,19 @@ header .navbar ul li a:hover{
 }
 
 .portfolio .box-container .box img{
-    height:30%;
+    height:50%;
     width:100%;
+    border-radius: 10px;
     /* object-fit: cover; */
 }
 .portfolio .box-container .box h2{
     color: #fff;
+     font-size: 14px;
 }
 .portfolio .box-container .box a{
-   height:40%;
+   /* height:40%; */
    color: yellowgreen;
+   font-size: 25px;
 }
 .portfolio .box-container .box:hover img{
     transform: scale(0.9);
@@ -398,8 +402,80 @@ header .navbar ul li a:hover{
     width:3%;
     margin-right: 1px;
 }
+#img2{
+    height:3%;
+    width:3%;
+    margin-right: 1px; 
+}
 #github{
     color: #fff;
+}
+#linkedin{
+    color: #fff;
+}
+#techstack{
+    color:yellowgreen;
+}
+#techstack1{
+    color:yellowgreen;
+}
+#softskills{
+    color:#fff;
+    text-align: center;
+    font-size: 2rem;
+    /* display: flex; */
+    /* padding:1rem; */
+}
+#sskills{
+    text-align: center;
+    margin:0 6rem;
+    font-size: 4rem;
+    padding:1rem;
+    border-bottom: .1rem solid #fff4;
+    color:#fff;
+}
+#sskills span{
+    color:var(--yellow);
+}
+
+#softskills1{
+    color:#fff;
+    text-align: center;
+    font-size: 2rem;
+    /* display: flex; */
+    /* padding:1rem; */
+}
+#sskills1{
+    text-align: center;
+    margin:0 6rem;
+    font-size: 4rem;
+    padding:1rem;
+    border-bottom: .1rem solid #fff4;
+    color:#fff;
+}
+#sskills1 span{
+    color:var(--yellow);
+}
+.counter1{
+    flex:1 1 48rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.counter1 .box1{
+    width:20rem;
+    background:#222;
+    text-align: center;
+    padding: 2rem;
+    margin:2rem;
+}
+
+
+
+#skk>.counter1>.box1>h3{
+    font-size: 2rem;
+    color:#fff;
 }
 
 
