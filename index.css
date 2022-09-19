@@ -732,6 +732,9 @@ span.contrib-number{
 #GITH span{
     color:var(--yellow);
 }
+/* .btn{
+    color:#222;
+} */
 
 /* .TechStack+.row{
 	max-height: 100px;
