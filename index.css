@@ -106,10 +106,10 @@ header{
 
 header .user img{
     height:17rem;
-    width:17rem;
+    width:19rem;
     border-radius: 50%;
     /* object-fit: cover; */
-    margin-top: 3rem;
+    margin-top: 4rem;
     margin-bottom: 1rem;
     border:.7rem solid var(--yellow);
 }
