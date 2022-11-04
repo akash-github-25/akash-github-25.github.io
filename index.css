@@ -740,6 +740,10 @@ span.contrib-number{
 	max-height: 100px;
 } */
 
+/* .acgraph{
+    border:1px solid yellow;
+    align-items: center;
+    /* width:400px; */
 
 
 
@@ -756,7 +760,7 @@ span.contrib-number{
 
 /* media queries  */
 
-@media (max-width:1200px){
+@media (max-width:1728px){
 
     html{
         font-size: 55%;
@@ -764,6 +768,17 @@ span.contrib-number{
 
     .home{
         padding:1rem 4rem;
+    }
+    #skills{
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    #imagesskills{
+       margin-top: 40px;
+    }
+    .education{
+        margin-top: -90px;
+        margin-bottom: -150px;
     }
 
 }
@@ -785,6 +800,11 @@ span.contrib-number{
    body{
        padding:0;
    }
+   .education{
+    margin-top: -190px;
+    margin-bottom: -190px;
+}
+   
 
 }
 
@@ -793,10 +813,22 @@ span.contrib-number{
     html{
         font-size: 50%;
     }
+    .education{
+        margin-top: -180px;
+        margin-bottom: -200px;
+    }
+    #skills{
+        /* margin-top: -120px; */
+        margin-bottom: -100px;
+    }
+    #imagesskills{
+        margin-bottom: -440px;
+        /* margin-top: -20px; */
+    }
  
  }
 
-@media (max-width:400px){
+@media (max-width:500px){
 
     header{
         width: 100vw;
@@ -808,6 +840,18 @@ span.contrib-number{
 
     .about .row .counter .box{
         width: 100%;
+    }
+    .education{
+        margin-top: -100px;
+        margin-bottom: -180px;
+    }
+    #skills{
+        /* margin-top: -120px; */
+        margin-bottom: -100px;
+    }
+    #imagesskills{
+        margin-bottom: -500px;
+        margin-top: 100px;
     }
  
     .education .box-container .box{
