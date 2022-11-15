@@ -15,39 +15,82 @@
 <body>
     
 <!-- header section starts  -->
+<!-- <nav class="navbar">
+    <ul>
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="Akash-Mishra-Resume.pdf" download="Akash-Mishra-Resume">Resume</a></li>
+        <li><a href="#portfolio">projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">contact</a></li>
+        
+    </ul>
+</nav> -->
+<div class="hero">
 
-<header>
+    <div class="row" id="nav">
+        <nav class="nav" role="navigation">
+      
+            <!-- <h3 class="logo" id="change">Portfo<span>lio</span></h3> -->
+            <ul class="nav__items" id="SideBar">
+              <li class="nav__item">
+                <a href="#home" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#about" class="nav__link">About</a>
+              </li>
+          
+              <li class="nav__item">
+              <a href="Akash-Mishra-Resume.pdf" download="Akash-Mishra-Resume" title="Download Resume" class="nav__link">Resume</a>
+              </li>
+              
+              <li class="nav__item">
+                <a href="#Skills" class="nav__link">Skills</a>
+              </li>
+              <li class="nav__item">
+                <a href="#portfolio" class="nav__link">Projects</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="nav__link">Contact</a>
+              </li>
+          
+              <li class="nav__item">
+                <a href="#GITH" class="nav__link">Contribution</a>
+              </li>
+              
+          
+                  <i class="fa-sharp fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </ul>
+              <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+          </nav>
+        
+         </div>
 
-    <div class="user">
-        <img src="my photo.jpeg" alt="">
-        <h3 class="name">Akash Kumar Mishra</h3>
-        <p class="post">Back end developer</p>
-    </div>
+</div>
 
-    <nav class="navbar">
-        <ul>
-            <li><a href="#home">home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="Akash-Mishra-Resume.pdf" download="Akash-Mishra-Resume">Resume</a></li>
-            <li><a href="#portfolio">projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">contact</a></li>
-            
-        </ul>
-    </nav>
 
-</header>
 
 <!-- header section ends -->
 
-<div id="menu" class="fas fa-bars"></div>
+<!-- <div id="menu" class="fas fa-bars"></div> -->
 
 <!-- home section starts  -->
 
 <section class="home" id="home">
+    <header>
 
-    <h3>HI THERE !</h3>
-    <h1>I'M <span>Akash Kumar Mishra</span></h1>
+        <div class="user">
+            <img src="my photo.jpeg" alt="">
+            <h3 class="name">Akash Kumar Mishra</h3>
+            <p class="post">Back end developer</p>
+        </div>
+    
+        
+    
+    </header>
+
+    <!-- <h3>HI THERE !</h3>
+    <h1>I'M <span>Akash Kumar Mishra</span></h1> -->
     <p>Motivated and highly productive Backend Developer professional with mathematics background. Detail-oriented with strong skills in multi-tasking. Adept at building and maintaining effective working relationships with co-workers through outstanding interpersonal skills.
     </p>
     <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
@@ -177,6 +220,19 @@
 <div class="box-container">
 
     <div id="myntra" class="box">
+        <img src="OTM.jpeg" alt="">
+        <h1 class="clone">ONLINE TRIP APPLICATION</h1>
+        <button class="btn"><a href="https://drive.google.com/file/d/1t8q-Hg8N54gR19RKfNmvQRAx0Wpb2mL0/view?usp=sharing">Video</a></button>
+        <!-- <a href="https://startling-rolypoly-e1ed05.netlify.app/">Go live</a> -->
+        <h2>I worked on login/logout,Admin and Customer module.Also helped on creating the E-R diagram.
+        </h2>
+            <h2 id="techstack">TECH STACK USED-</h2>
+            <h2>SPRING_DATA_JPA,MYSQL.</h2>
+            <button class="btn"><h2><a id="git1"href="https://github.com/akash-github-25/tangible-station-4401">Github link</a></h2></button>
+            <!-- <h2><a id="git1"href="https://github.com/akash-github-25/unable-sidewalk-4719">Github link</a></h2> -->
+    </div>
+
+    <div id="myntra" class="box">
         <img src="https://images.thequint.com/quint-hindi/2021-01/b41ffa4f-91fc-4c3f-9873-d8899b2405cf/Untitled_design.jpg?w=1200&auto=format%2Ccompress&ogImage=true" alt="">
         <h1 class="clone">MYNTRA CLONE</h1>
         <button class="btn"><a href="https://startling-rolypoly-e1ed05.netlify.app/">Go live</a></button>
@@ -187,9 +243,6 @@
             <h2>HTML,CSS,JAVASCRIPT.</h2>
             <button class="btn"><h2><a id="git1"href="https://github.com/akash-github-25/unable-sidewalk-4719">Github link</a></h2></button>
             <!-- <h2><a id="git1"href="https://github.com/akash-github-25/unable-sidewalk-4719">Github link</a></h2> -->
-
-            
-
     </div>
 
     <div class="box">
@@ -245,7 +298,8 @@
     </div>
     
 </section>
-<section class="about" id="skills">
+
+<!-- <section class="about" id="skills">
     <h1  class="heading"> <span> my </span> skills </h1>
 <div class="row-2">
     
@@ -326,7 +380,9 @@
     
   
 
-</section>
+</section> -->
+
+<section id="Skills"> </section>
 
 <!-- <section id="skk">
     <h1 id="sskills"> Tech<span>Skills</span> </h1>
@@ -406,6 +462,7 @@
 </section> -->
 <!-- contact section starts  -->
 <!-- <section id="git"> -->
+    <section>
     <h1 id="GITH"> CONTRI<span>BUTION</span> </h1>
     <div class="calendar" >
         Loading the data just for you.
@@ -419,6 +476,7 @@
     <div>
         <a href="https://github.com/akash-github-25/github-readme-stats"><img alt="Akash Mishra's Github Stats" src="https://github-readme-stats.vercel.app/api?username=akash-github-25&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=#8e8e8e" /></a>
     </div>
+</section>
 <!-- </section> -->
 
 <section class="contact" id="contact">

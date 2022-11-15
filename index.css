@@ -5,6 +5,21 @@
     /* --yellow:rgb(168,141,223); */
     --yellow:rgb(142, 201, 23);
     /* background: transparent; */
+    /* krishna */
+    --gutter-medium: 6rem;
+    --lightblue: #4aafda;
+	--white: #f0e9f2;
+	--white-1: #e5e5e6da;
+
+    --Myslills-width: 100% !important;
+	--Myslills-height: 30vh;
+	--Myslills-elements-displayed: 5;
+	--Myslills-element-width: calc(var(--Myslills-width) / var(--Myslills-elements-displayed));
+	--Myslills-animation-duration: calc(var(--Myslills-elements) * 3s);
+    --gutter-small-1: 2.5rem;
+	--gutter-small: 2rem;
+    --font-size-large: 5.5rem;
+    
 }
 
 *{
@@ -45,12 +60,16 @@ body{
     /* background: rgb(125, 30, 35); */
     background: rgb(33, 33, 33);
     overflow-x: hidden;
-    padding-left: 35rem;
+    margin: auto;
+    /* padding-left: 35rem; */
 }
 
 section{
     min-height: 100vh;
-    padding:1rem;
+    /* padding:1rem; */
+    margin: auto;
+    max-width: 1000px;
+
 }
 
 .btn{
@@ -88,22 +107,252 @@ section{
     color:var(--yellow);
 }
 
-header{
+.nav{
     position: fixed;
-    top:0; left:0;
-    z-index: 1000;
-    height:100%;
-    width:35rem;
+    /* position:sticky; */
+    top:0; 
+    /* left:0; */
+    z-index: 100;
+    /* height:100%; */
+    height:50px;
+    /* width:35rem; */
+    width:100%;
     /* background:#1a1a1a; */
-    background: rgb(7, 7, 7);
+    background: rgb(70, 67, 67);
     /* background: rgb(102,102,102); */
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
-    text-align: center;
+    /* align-items: center; */
+    /* justify-content: center; */
+    justify-content: space-around;
+    /* flex-flow: column;
+
+    text-align: center; */
 }
 
+.hero {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	background-color: rgb(229, 239, 224);
+	max-width: 100%;
+}
+
+
+.nav {
+	display: flex;
+	justify-content: space-around;
+	padding: 3rem 0rem;
+	height: 100px;
+}
+.nav__items {
+	display: flex;
+	list-style: none;
+    color: #f0e9f2;
+    font-size: 17px;
+}
+
+.nav__item:not(:last-child) {
+	margin-right: var(--gutter-medium);
+}
+
+.nav__link {
+	position: relative;
+	display: inline-block;
+	padding: 1rem 0;
+	text-decoration: none;
+	color: inherit;
+	transition: all 0.2s;
+}
+
+.nav__link::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 100%;
+	display: inline-block;
+	height: 1rem;
+	background: var(--white);
+	transition: all 0.25s cubic-bezier(1, 0.68, 0.16, 0.9);
+}
+
+.nav__link:hover {
+	color: var(--yellow);
+}
+
+.nav__link:hover::after {
+	right: 0;
+	height: 2px;
+	background: var(--yellow);
+}
+.nav .fa-sharp {
+	display: none;
+}
+
+.nav .fa-solid {
+	display: none;
+}
+
+.fa-solid {
+	font-size: 25px;
+	margin-left: 15px;
+	margin-right: 2px;
+}
+
+.fa-duotone {
+	font-size: 25px;
+}
+
+.fab {
+	font-size: 30px;
+	padding: 13px;
+	transition: all 0.3s;
+}
+
+.fab:hover {
+	transform: scale(1.6);
+}
+.link__text {
+	position: relative;
+	display: inline-block;
+	padding: 0.6rem;
+	color: inherit;
+	text-decoration: none;
+	border-bottom: 1px solid var(--yellow);
+}
+
+.link__text::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 100%;
+	background: var(--white);
+	height: 100%;
+	z-index: -1;
+	transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
+}
+
+.link__text:focus {
+	outline: none;
+}
+
+.link__text:hover::after,
+.link__text:focus:after {
+	right: 0;
+	background: var(--yellow);
+}
+
+.link__text span {
+	padding-left: 1rem;
+	font-family: sans-serif;
+}
+.row {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+
+}
+.Myslills {
+	width: var(--Myslills-width);
+	height: var(--Myslills-height);
+	overflow: hidden;
+	position: relative;
+	margin: auto;
+}
+
+.Myslills:before,
+.Myslills:after {
+	position: absolute;
+	top: 0;
+	width: 10rem;
+	height: 100%;
+	content: "";
+	z-index: 1;
+}
+
+.Myslills:before {
+	left: 0;
+	background: linear-gradient(to right, #111 0%, transparent 100%);
+}
+
+.Myslills:after {
+	right: 0;
+	background: linear-gradient(to left, #111 0%, transparent 100%);
+}
+
+.Thechical {
+	list-style: none;
+	height: 100%;
+	display: flex;
+	animation: scrolling var(--Myslills-animation-duration) linear infinite;
+}
+
+.Thechical:hover {
+	animation-play-state: paused;
+}
+
+.Thechical li:hover {
+	transform: scale(1.1);
+	transition: 0.5s;
+
+}
+#h2 {
+	font-size: var(--font-size-large);
+	margin-bottom: var(--gutter-medium);
+}
+
+#h2::after {
+	content: '';
+	display: block;
+	height: 2px;
+	width: 10rem;
+	background: var(--yellow);
+	margin: var(--gutter-small) 0;
+}
+@keyframes scrolling {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(calc(-1 * var(--Myslills-element-width) * var(--Myslills-elements)));
+	}
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+.Thechical li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	width: var(--Myslills-element-width);
+	max-height: 100%;
+	font-size: calc(var(--Myslills-height)*3/4);
+	white-space: nowrap;
+}
+.project__logos {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+/* .project:not(:last-child) {
+	margin-bottom: 10rem;
+} */
+
+.project__logo {
+	height: 15rem;
+	max-width: 15rem;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+.project__logos div+div {
+	width: 35%;
+	display: flex;
+	align-items: center;
+}
+/* krishna */
 header .user img{
     height:17rem;
     width:19rem;
@@ -126,7 +375,7 @@ header .user .post{
     /* color:black; */
 }
 
-header .navbar{
+/* header .navbar{
     width:100%;
 }
 
@@ -142,14 +391,14 @@ header .navbar ul li a{
     margin:0.8rem 0;
     background:#333;
     color:#fff;
-    /* color:black; */
+   
     font-size: 2rem;
     border-radius: 3rem;
 }
 
 header .navbar ul li a:hover{
     background:var(--yellow);
-}
+} */
 
 #menu{
     position: fixed;
@@ -430,6 +679,7 @@ header .navbar ul li a:hover{
 #techstack{
     color:yellowgreen;
     margin-top: 10px;
+    width:200px;
 }
 #techstack1{
     color:yellowgreen;
@@ -818,13 +1068,27 @@ span.contrib-number{
         margin-bottom: -200px;
     }
     #skills{
-        /* margin-top: -120px; */
+     
         margin-bottom: -100px;
     }
     #imagesskills{
         margin-bottom: -440px;
-        /* margin-top: -20px; */
+       
     }
+    :root {
+		--Myslills-width: 120vw;
+		--Myslills-height: 30vh;
+		--Myslills-elements-displayed: 4;
+	}
+
+	.Myslills:before,
+	.Myslills:after {
+		width: 4rem;
+	}
+
+	.Thechical li img {
+		width: 50%;
+	}
  
  }
 
@@ -867,3 +1131,111 @@ span.contrib-number{
     }
 
  }
+ 
+ @media only screen and (max-width: 750px) {
+
+
+    .nav  {
+      justify-content: space-between;
+      /* height: 100%; */
+      }
+
+.nav .fa-solid {
+    display: block;
+    color: white;
+    font-size: 25px;
+}
+
+.nav ul {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 50vh;
+    padding: 50px;
+    display: block;
+    z-index: 2;
+}
+
+.nav ul .fa-sharp {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+    display: block;
+    color: red;
+    font-size: 25px;
+}
+}
+
+@media only screen and (max-width: 500px) {
+
+	.project__logos div:last-child {
+		display: none;
+	}
+
+	.heading-primary {
+		font-size: var(--font-size-large);
+		min-width: 100%;
+	}
+
+	/* #h2 {
+		font-size: var(--font-size-medium-1);
+	} */
+
+	
+
+	.back-to-top {
+		right: 1rem;
+	}
+
+	#nav {
+		height: 80px;
+	}
+
+	.header__text p {
+		transform: scale(0.8);
+	}
+
+	
+
+	.Thechical li img {
+		width: 40%;
+	}
+
+	:root {
+		--Myslills-width: 100vw;
+		--Myslills-height: 20vh;
+	}
+
+}
+@media only screen and (max-width: 900px) {
+    :root {
+    --Myslills-width: 130vw;
+    --Myslills-height: 30vh;
+    --Myslills-elements-displayed: 4;
+}
+
+.Myslills:before,
+.Myslills:after {
+    width: 4rem;
+}
+
+.Thechical li img {
+    width: 50%;
+}}
+@media only screen and (max-width: 1340px) {
+	.row {
+		max-width: 1100px;
+	}
+
+	.Myslills:before,
+	.Myslills:after {
+		width: 4rem;
+	}
+
+	.Thechical li img {
+		width: 50%;
+	}
+}
