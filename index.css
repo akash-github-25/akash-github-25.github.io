@@ -1067,14 +1067,7 @@ span.contrib-number{
         margin-top: -180px;
         margin-bottom: -200px;
     }
-    #skills{
-     
-        margin-bottom: -100px;
-    }
-    #imagesskills{
-        margin-bottom: -440px;
-       
-    }
+ 
     :root {
 		--Myslills-width: 120vw;
 		--Myslills-height: 30vh;
@@ -1133,7 +1126,15 @@ span.contrib-number{
  }
  
  @media only screen and (max-width: 750px) {
-
+    /* #skills{
+        margin-top: -20px;
+       margin-bottom: -10px;
+   } */
+   #imagesskills{
+       margin-bottom: 5px;
+       /* margin-top: 40px; */
+      
+   }
 
     .nav  {
       justify-content: space-between;
@@ -1170,7 +1171,15 @@ span.contrib-number{
 }
 
 @media only screen and (max-width: 500px) {
-
+  #education{
+    margin-top: 20px;
+  }
+  #portfolio{
+    margin-top: 40px;
+  }
+  #skills{
+    margin-top: 30px;
+  }
 	.project__logos div:last-child {
 		display: none;
 	}
