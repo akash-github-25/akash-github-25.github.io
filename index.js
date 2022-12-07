@@ -118,7 +118,19 @@ const closeMenu = () => {
   for (let i = 0; i < Elements; i++) {
     MySkills.appendChild(MySkills.children[i].cloneNode(true));
   }
-  
+
+document.getElementById("resume_button_1").addEventListener("click", () => {
+
+	window.open("https://drive.google.com/file/d/1X993G4KNPlVUhdNaDCBToXCt3_NUzH78/view?usp=sharing", "_blank");
+
+})
+
+document.getElementById("resume_button_2").addEventListener("click", () => {
+
+	window.open("https://drive.google.com/file/d/1X993G4KNPlVUhdNaDCBToXCt3_NUzH78/view?usp=sharing", "_blank");
+
+})
+
   const Href = () => {
     let Src = [
       "./img/Java-PNG-Clipart.png",
