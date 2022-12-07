@@ -121,13 +121,13 @@ const closeMenu = () => {
 
 document.getElementById("resume_button_1").addEventListener("click", () => {
 
-	window.open("https://drive.google.com/file/d/1X993G4KNPlVUhdNaDCBToXCt3_NUzH78/view?usp=sharing", "_blank");
+	window.open("https://drive.google.com/file/d/1wpB4xqCoIRlumqVN95RXQl6OEbWncXKe/view?usp=sharing", "_blank");
 
 })
 
 document.getElementById("resume_button_2").addEventListener("click", () => {
 
-	window.open("https://drive.google.com/file/d/1X993G4KNPlVUhdNaDCBToXCt3_NUzH78/view?usp=sharing", "_blank");
+	window.open("https://drive.google.com/file/d/1wpB4xqCoIRlumqVN95RXQl6OEbWncXKe/view?usp=sharing", "_blank");
 
 })
 
